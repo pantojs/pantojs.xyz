@@ -1,7 +1,6 @@
-# Pantojs-xyz
+# pantojs.xyz
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Source code of <http://pantojs.xyz/>.
 
 ## Prerequisites
 

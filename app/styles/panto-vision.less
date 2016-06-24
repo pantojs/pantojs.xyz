@@ -1,0 +1,51 @@
+/**
+  * Copyright (C) 2016 pantojs.xyz
+  * panto-vision.less
+  *
+  * changelog
+  * 2016-06-25[00:35:15]:revised
+  *
+  * @author yanni4night@gmail.com
+  * @version 1.0.0
+  * @since 1.0.0
+  */
+.panto-vision {
+    @height: 900px;
+    height: @height;
+    position: relative;
+    font-family: serif;
+    .mask {
+        background: url(../img/panto.jpg) center top no-repeat;
+        background-size: auto @height;
+        height: @height; 
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-filter: blur(15px);
+        background-color: rgba(0,0,0,.4);
+    }
+    .content {
+        z-index: 5px;
+        height: @height;
+        position: relative;
+        color: #fff;
+        .caption {
+            padding-top: 300px;
+            font-size: 100px;
+            height: 120px;
+            font-family: monospace;
+            letter-spacing: 5px;
+            text-align: center;
+            font-variant: small-caps;
+        }
+        .detail {
+            font-size: 20px;
+            text-align: center;
+            height: 30px;
+            color: #333;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+    }
+}

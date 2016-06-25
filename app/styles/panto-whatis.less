@@ -16,10 +16,15 @@
         font-size: 50px;
         margin-bottom: 70px;
     }
-    img{
+    img {
+        &.focus {
+            transform: none;
+        }
+        transition: all 1s;
         width: 800px;
         display: block;
         margin: 0 auto;
+        transform: perspective(600px) translateZ(-1200px;)
     }
     .desc {
         dfn {

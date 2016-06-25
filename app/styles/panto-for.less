@@ -27,6 +27,11 @@
     table {
         width: 800px;
         margin: 40px auto;
+        transition: all 1s;
+        transform: translateX(-1000px);
+        &.focus{
+            transform: none;
+        }
         th, td {
             border: 1px #fff solid;
             border-collapse: collapse;

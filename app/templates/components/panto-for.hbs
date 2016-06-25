@@ -1,0 +1,62 @@
+<div class="panto-for">
+    <h2>What is PantoJS for?</h2>
+    <p class="desc"><b>PantoJS</b> is designd for building modern isomorphic web front-ended projects. It works mostly like <a href="http://gruntjs.com">grunt</a> or <a href="http://gulpjs.com">gulp</a>, but with the following improvement:</p>
+    <table>
+        <thead><tr>
+            <th></th>
+            <th>gruntjs</th>
+            <th>gulpjs</th>
+            <th>pantojs</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>Plugin Extension</td>
+            <td>👍</td>
+            <td>👍</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td>Flow Control</td>
+            <td>👍</td>
+            <td>👍</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td>File Selection</td>
+            <td>👍</td>
+            <td>👍</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td><a href="#fs">File Streams</a></td>
+            <td>👎🏻</td>
+            <td>👍</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td><a href="#rf">Rest Files</a></td>
+            <td>👎🏻</td>
+            <td>👎🏻</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td><a href="#sr">Share Reading</a></td>
+            <td>👎🏻</td>
+            <td>👎🏻</td>
+            <td>👍</td>
+        </tr>
+        <tr>
+            <td><a href="#it">Incremental Transform</a></td>
+            <td>👎🏻</td>
+            <td>👎🏻</td>
+            <td>👍</td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="points">
+        <li><b id="fs">File Stream</b>: Transforming files through memory streams instead of hard disk will accelerate the whole transforming task.</li>
+        <li><b id="rf">Rest Files</b>: Support picking the rest files, which aren't and will not be selected in the whole task.</li>
+        <li><b id="sr">Share Reading</b>: Streams share a file-reading, which avoids duplicated hard disk visiting.</li>
+        <li><b id="it">Incremental Transform</b>: File change/remove/add will not affect other files, which makes rerunning very fast.</li>
+    </ul>
+</div>

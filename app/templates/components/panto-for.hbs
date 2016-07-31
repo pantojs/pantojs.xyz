@@ -1,62 +1,39 @@
 <div class="panto-for">
-    <h2>What is PantoJS for?</h2>
-    <p class="desc"><b>PantoJS</b> is designd for building modern isomorphic web front-ended projects. It works mostly like <a href="http://gruntjs.com">grunt</a> or <a href="http://gulpjs.com">gulp</a>, but with the following improvement:</p>
+    <h2>为什么设计 PantoJS?</h2>
+    <p class="desc"><b>PantoJS</b> 原设计为对现代同构 JavaScript 前端工程的构建（编译）支持。往往这类项目具有异常复杂的构建流程，然而传统的构建工具存在以下不足：(1)以磁盘文件作为构建环节之间的交流格式，速度缓慢；(2)基于可匹配的文件集合，丢失剩余文件；(3)对相同源文件的不同构建流程会读取磁盘多次；(4)增量构建粒度过粗</p>
+    <p class="desc">相比于 <a href="http://gruntjs.com">grunt</a> 和 <a href="http://gulpjs.com">gulp</a>， panto 具有以下改进：</p>
     <table>
         <thead><tr>
             <th></th>
-            <th>gruntjs</th>
-            <th>gulpjs</th>
-            <th>pantojs</th>
+            <th>grunt</th>
+            <th>gulp</th>
+            <th>panto</th>
         </tr></thead>
         <tbody>
         <tr>
-            <td>Plugin Extension</td>
-            <td>👍</td>
-            <td>👍</td>
-            <td>👍</td>
-        </tr>
-        <tr>
-            <td>Flow Control</td>
-            <td>👍</td>
-            <td>👍</td>
-            <td>👍</td>
-        </tr>
-        <tr>
-            <td>File Selection</td>
-            <td>👍</td>
-            <td>👍</td>
-            <td>👍</td>
-        </tr>
-        <tr>
-            <td><a href="#fs">File Streams</a></td>
+            <td>基于内存的流式构建流程</td>
             <td>👎🏻</td>
             <td>👍</td>
             <td>👍</td>
         </tr>
         <tr>
-            <td><a href="#rf">Rest Files</a></td>
+            <td>剩余文件</td>
             <td>👎🏻</td>
             <td>👎🏻</td>
             <td>👍</td>
         </tr>
         <tr>
-            <td><a href="#sr">Share Reading</a></td>
+            <td>同一文件不同流程的共享读取</td>
             <td>👎🏻</td>
             <td>👎🏻</td>
             <td>👍</td>
         </tr>
         <tr>
-            <td><a href="#it">Incremental Transform</a></td>
+            <td>文件级别的增量构建</td>
             <td>👎🏻</td>
             <td>👎🏻</td>
             <td>👍</td>
         </tr>
         </tbody>
     </table>
-    <ul class="points">
-        <li><b id="fs">File Stream</b>: Transforming files through memory streams instead of hard disk will accelerate the whole transforming task.</li>
-        <li><b id="rf">Rest Files</b>: Support picking the rest files, which aren't and will not be selected in the whole task.</li>
-        <li><b id="sr">Share Reading</b>: Streams share a file-reading, which avoids duplicated hard disk visiting.</li>
-        <li><b id="it">Incremental Transform</b>: File change/remove/add will not affect other files, which makes rerunning very fast.</li>
-    </ul>
 </div>

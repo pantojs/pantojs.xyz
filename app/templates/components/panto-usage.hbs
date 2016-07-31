@@ -1,5 +1,5 @@
 <div class="panto-usage">
-    <h2 id="install">INSTALL</h2>
+    <h2 id="install">安装</h2>
     <code class="cmd {{focusClass}}">
 <pre>$npm install -g panto-cli</pre>
 <pre>$panto -w -f pantofile.js</pre>
@@ -7,7 +7,11 @@
 <code class="js {{focusClass}}">
     <pre>    <span class="comment">// pantofile.js</span>
     module.exports = panto => {
-        panto.pick('src/**/*.js').pipe(panto.read()).pipe(panto.write()).end();
+        panto.loadTrasnformer('read');
+        panto.loadTrasnformer('uglify');
+        panto.loadTrasnformer('write');
+
+        panto.pick('src/**/*.js').read().uglify.write();
     };</pre>
 </code>
 </div>

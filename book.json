@@ -1,0 +1,17 @@
+{
+  "gitbook": "3.0.3",
+  "title": "Panto",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["edit-link", "prism", "-highlight", "github", "anker-enable"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/pantojs/pantojs-xyz/tree/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/pantojs/pantojs-xyz/"
+    }
+  }
+}

@@ -4,6 +4,8 @@
 
 ![panto](img/panto.jpg)
 
-It is used for **building projects**, especially the *front-end* ones, but is suitable for any ones in theory.
+It is built for **transforming files** in a project.
+
+Panto is similar to [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/), but more **efficient**, **powerful** and **flexible**. They could be replaced easily. Actually, Panto can do almost everything you want. We will see that soon.
 
 >This documentaion is still in progress.

@@ -18,10 +18,7 @@ It's like _gruntfile.js_ somehow, define a function:
 
 ```js
 module.exports = panto => {
-    
 };
 ```
 
 Now you can use panto API to define building process.
-
-Let's finish a sample.

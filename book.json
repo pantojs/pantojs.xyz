@@ -7,11 +7,11 @@
   "plugins": ["edit-link", "prism", "-highlight", "github", "anker-enable"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/pantojs/pantojs-xyz/tree/master",
+      "base": "https://github.com/pantojs/pantojs.xyz/tree/master",
       "label": "Edit This Page"
     },
     "github": {
-      "url": "https://github.com/pantojs/pantojs-xyz/"
+      "url": "https://github.com/pantojs/pantojs.xyz/"
     }
   }
 }

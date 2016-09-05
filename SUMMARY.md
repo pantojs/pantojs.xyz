@@ -7,6 +7,5 @@
     * [2.1. Transformer](TRANSFORMER.md)
     * [2.2. Stream](STREAM.md)
 * [3. API](API.md)
-* [4. Troubleshooting](TROUBLESHOOTING.md)
-* [5. FAQ](FAQ.md)
-* [6. Feedback](FEEDBACK.md)
+* [4. FAQ](FAQ.md)
+* [5. Feedback](FEEDBACK.md)
